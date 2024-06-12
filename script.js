@@ -6,41 +6,41 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
   {
-    enunciado: "qual é a cor dos olhos",
+    enunciado: "assim que ssaiu da escola você se depara com uma nova tecnologia, um chat que cosnegue responder todas as duvidas de uma pessoa pode ter, ele também gera imagens e audios hiper-realistas.Qual seu primeiro pensamento";
     alternativas: [
-      "azuis ",
-      "verdes"
+      "isso é assustador !";
+      "isso é maravilhoso!";
+    ]
+  }
+
+  {
+    enunciado: "Com a descoberta dessa tecnologia, chamada inteligencia artificial(IA), uma professora de tecnologia decicidiu fazer uma sequencia de aulas sobre essa ferramenta. No fim de uma aula ela pede que você escreva um trabalho sobre o uso da IA na sala de aula. Qual atitude você?";
+    alternativas: [
+      "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique em uma linmguagem que facilite o entendimento"
+      ""
     ]
   },
 
   {
-    enunciado: "quem é o melhor vilão jason ou fred krügger",
+    enunciado: "Pergunta 3"
     alternativas: [
-      "jaon",
-      "fred"
-    ]
-  },
-
-  {
-    enunciado: "Pergunta 3",
-    alternativas: [
-      "Resposta 1 ",
+      "Resposta 1 "
       "Resposta 2"
     ]
   },
 
   {
-    enunciado: "Pergunta 4",
+    enunciado: "Pergunta 4"
     alternativas: [
-      "Resposta 1 ",
+      "Resposta 1 "
       "Resposta 2"
     ]
   },
 
   {
-    enunciado: "Pergunta 5",
+    enunciado: "Pergunta 5"
     alternativas: [
-      "Resposta 1 ",
+      "Resposta 1 "
       "Resposta 2"
     ]
   }
@@ -64,4 +64,22 @@ caixaPerguntas.textContent = perguntaAtual.enunciado;
   mostraAlternativas();
 }
 
+mostraPergunta();
+let atual = 0;
+let perguntaAtual;
+
+function mostraAlternativas() {
+  for (const alternativa of perguntaAtual.alternativas) {
+    const botaoAlternativas = document.createElement("button");
+    botaoAlternativas.textContent = alternativa;
+    caixaAlternativas.appendChild(botaoAlternativas);
+  }
+}
+
+
+function mostraPergunta() {
+  perguntaAtual = perguntas[atual];
+  caixaPerguntas.textContent = perguntaAtual.enunciado;
+  mostraAlternativas();
+}
 mostraPergunta();
