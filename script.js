@@ -17,9 +17,9 @@ const perguntas = [
     enunciado: "Com a descoberta dessa tecnologia, chamada inteligencia artificial(IA), uma professora de tecnologia decicidiu fazer uma sequencia de aulas sobre essa ferramenta. No fim de uma aula ela pede que você escreva um trabalho sobre o uso da IA na sala de aula. Qual atitude você?";
     alternativas: [
       "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique em uma linmguagem que facilite o entendimento"
-      ""
+      "b"
     ]
-  },
+  }
 
   {
     enunciado: "Pergunta 3"
@@ -27,7 +27,7 @@ const perguntas = [
       "Resposta 1 "
       "Resposta 2"
     ]
-  },
+  }
 
   {
     enunciado: "Pergunta 4"
@@ -35,7 +35,7 @@ const perguntas = [
       "Resposta 1 "
       "Resposta 2"
     ]
-  },
+  }
 
   {
     enunciado: "Pergunta 5"
@@ -44,7 +44,7 @@ const perguntas = [
       "Resposta 2"
     ]
   }
-];
+]
 
 let atual = 0;
 let perguntaAtual;
@@ -58,7 +58,8 @@ function mostraAlternativas(){
 }
 
 
-function mostraPergunta(){
+function mostraPergunta()
+{
   perguntaAtual = perguntas[atual];
 caixaPerguntas.textContent = perguntaAtual.enunciado;
   mostraAlternativas();
