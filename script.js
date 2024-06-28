@@ -6,66 +6,47 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
   {
-    enunciado: "assim que ssaiu da escola você se depara com uma nova tecnologia, um chat que cosnegue responder todas as duvidas de uma pessoa pode ter, ele também gera imagens e audios hiper-realistas.Qual seu primeiro pensamento";
+    enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue todas as dúvidas que uma pessoa pod ter, ele também gera imagens e áudios hiper-realistas. Qual o seu primeiro pensamento?",
     alternativas: [
-      "isso é assustador !";
-      "isso é maravilhoso!";
+      "Isso é assustador",
+      "Isso é maravilhoso"
     ]
-  }
+  },
 
   {
-    enunciado: "Com a descoberta dessa tecnologia, chamada inteligencia artificial(IA), uma professora de tecnologia decicidiu fazer uma sequencia de aulas sobre essa ferramenta. No fim de uma aula ela pede que você escreva um trabalho sobre o uso da IA na sala de aula. Qual atitude você?";
+    enunciado: "Com a descoberta desta tecnologia, chamada inteligência artificial (IA), uma professora de tecnologia de uma escola decidiu fazer uma sequência de aulas sobre essa ferramenta. No fim de uma aula, ela pede que você escreva um trabalho sobre o uso de uma IA em sala de aula. Qual atitude você toma?",
     alternativas: [
-      "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique em uma linmguagem que facilite o entendimento"
-      "b"
+      "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique em uma linguagem que facilite o entendimento.",
+      "Escreve um trabalho com base em conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema."
     ]
-  }
+  },
 
   {
-    enunciado: "Pergunta 3"
+    enunciado: "pergunta 3",
     alternativas: [
-      "Resposta 1 "
-      "Resposta 2"
+      "resposta 5",
+      "resposta 6"
     ]
-  }
+  },
 
   {
-    enunciado: "Pergunta 4"
+    enunciado: "pergunta 4",
     alternativas: [
-      "Resposta 1 "
-      "Resposta 2"
+      "resposta 7",
+      "resposta 8"
     ]
-  }
+  },
 
   {
-    enunciado: "Pergunta 5"
+    enunciado: "pergunta 5",
     alternativas: [
-      "Resposta 1 "
-      "Resposta 2"
+      "resposta 9",
+      "resposta 10"
     ]
   }
-]
 
-let atual = 0;
-let perguntaAtual;
+];
 
-function mostraAlternativas(){
-  for const alternativa of perguntaAtual.alternativas){
-    const boataoAlternativas = document.createElement("button");
-    botaoAlternativas.textcontent = alternativa;
-    caixaAlternativas.appendChild(botaoAlternativas);
-  }
-}
-
-
-function mostraPergunta()
-{
-  perguntaAtual = perguntas[atual];
-caixaPerguntas.textContent = perguntaAtual.enunciado;
-  mostraAlternativas();
-}
-
-mostraPergunta();
 let atual = 0;
 let perguntaAtual;
 
@@ -77,10 +58,10 @@ function mostraAlternativas() {
   }
 }
 
-
 function mostraPergunta() {
   perguntaAtual = perguntas[atual];
   caixaPerguntas.textContent = perguntaAtual.enunciado;
   mostraAlternativas();
 }
+
 mostraPergunta();
